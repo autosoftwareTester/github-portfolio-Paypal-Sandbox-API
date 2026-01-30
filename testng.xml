@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PayPal API Suite" verbose="1" parallel="false">
+  <listeners>
+    <listener class-name="com.paypal.reporting.TestListener" />
+  </listeners>
+  <test name="API Tests">
+    <packages>
+      <package name="org.example.paypal.authorization" />
+      <package name="org.example.paypal.orders" />
+      <package name="org.example.paypal.payments" />
+      <package name="org.example.paypal.invoices" />
+      <package name="org.example.paypal.subscriptions" />
+      <package name="org.example.paypal.payouts" />
+      <package name="org.example.paypal.webhooks" />
+      <package name="org.example.paypal.shipmenttracking" />
+      <package name="org.example.paypal.transactionsearch" />
+      <package name="org.example.paypal.currencyexchange" />
+      <package name="org.example.paypal.disputes" />
+      <package name="org.example.paypal.onboarding" />
+      <package name="org.example.paypal.paymentmethodtokens" />
+    </packages>
+    <classes>
+<!--      <class name="bdd.com.paypal.RunCucumberTest" />-->
+    </classes>
+  </test>
+</suite>
