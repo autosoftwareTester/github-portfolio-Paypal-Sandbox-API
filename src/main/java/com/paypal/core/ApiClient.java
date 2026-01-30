@@ -1,5 +1,4 @@
 package com.paypal.core;
-
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 

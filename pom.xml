@@ -35,6 +35,11 @@
       <artifactId>rest-assured</artifactId>
       <version>${restassured.version}</version>
     </dependency>
+      <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.9.0</version>  <!-- Use the latest version -->
+      </dependency>
 
     <!-- Jackson for JSON handling -->
     <dependency>
@@ -49,7 +54,11 @@
       <artifactId>extentreports</artifactId>
       <version>${extentreports.version}</version>
     </dependency>
-
+      <dependency>
+          <groupId>org.json</groupId>
+          <artifactId>json</artifactId>
+          <version>20231013</version> <!-- Use a recent version -->
+      </dependency>
     <!-- Logging -->
     <dependency>
       <groupId>ch.qos.logback</groupId>

@@ -2,7 +2,10 @@
 Feature: Orders
   Create Order
 
-  Scenario: Create a basic order (happy path)
-    Given I have a valid order payload
-    When I create the order
-    Then the API should return a 201 Created response
+  Scenario Outline: Create a basic order (happy path)
+    Given I create the order with intent "<intent>"
+    Then I validate the order response
+
+    Examples:
+    | intent|
+    |AUTHORIZE|
